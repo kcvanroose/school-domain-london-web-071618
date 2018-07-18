@@ -1,4 +1,4 @@
-
+require 'pry'
 class School
   def initialize(name)
     @name = name
@@ -11,6 +11,7 @@ class School
   
   def add_student(student, grade)
     roster[grade] = []
+    binding.pry
     roster[grade] << student
   end
 
