@@ -22,9 +22,11 @@ class School
   end
   
   def sort
-      
+      new_hash = {}
     
-      @roster.map do |key, value| value.sort
+      @roster.each do |key, value| 
+      new_hash[key] = value.sort
+    end
     end
     binding.pry
   end
