@@ -22,7 +22,9 @@ class School
   end
   
   def sort
-    @roster.sort_by {|key, value| value}
+    #@roster.sort_by {|key, value| value}
+      @roster.each do |key, value| value.sort
+    end
     binding.pry
   end
 
