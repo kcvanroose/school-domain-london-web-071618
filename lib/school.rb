@@ -1,0 +1,16 @@
+
+class School
+  initialize(name)
+    @name = name
+  end
+
+  ROSTER = {}
+  
+  def add_student(student, grade)
+    ROSTER[grade] = []
+    ROSTER[grade] << student
+  end
+
+end
+
+school = School.new("Bayside High School")
