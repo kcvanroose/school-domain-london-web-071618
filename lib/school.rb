@@ -22,7 +22,9 @@ class School
   end
   
   def sort
-      @roster.collect do |key, value| value.sort
+      
+    
+      @roster.map do |key, value| value.sort
     end
     binding.pry
   end
