@@ -27,7 +27,7 @@ class School
       @roster.each do |key, value| 
       new_hash[key] = value.sort
     end
-    end
+    
     binding.pry
   end
 
