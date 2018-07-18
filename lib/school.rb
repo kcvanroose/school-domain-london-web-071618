@@ -13,7 +13,6 @@ class School
   def add_student(student, grade)
    if roster.empty? 
       @roster[grade] = []
-      @roster[grade] << student
     else
       @roster[grade] << student
   end
