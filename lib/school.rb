@@ -12,7 +12,7 @@ class School
     
     roster[grade] = []
     
-    roster[grade] << student
+    roster[grade].push student
     binding.pry
   end
 
